@@ -1,0 +1,31 @@
+<!-- Letter template for charity-donor-outreach.
+     Uppercase placeholder tokens are filled by scripts/generate_letters.py.
+     Every placeholder comes from the donor CSV or from confirmed config values. -->
+<html>
+<body style="font-family: Georgia, 'Times New Roman', serif; padding: 30px; max-width: 600px; color: #222;">
+
+  <p style="background: #fff3cd; color: #7a5c00; padding: 8px 12px; font-size: 12px;">
+    DRAFT generated for internal review. Remove this notice before sending.
+  </p>
+
+  <p style="text-align: right; color: #888;">{{DATE}}</p>
+
+  <p>{{SALUTATION}}</p>
+
+  <p>On behalf of everyone at <strong>{{CHARITY_NAME}}</strong>, thank you for your
+  generosity. Your lifetime support of <strong>${{LIFETIME_TOTAL}}</strong> has made a
+  real difference for animals in need.</p>
+
+  <p>{{CAMPAIGN_PARAGRAPH}}</p>
+
+  <p>{{ASK_SENTENCE}}</p>
+
+  <p>To give, simply reply to this email or visit our donation page at
+  <a href="{{DONATION_URL}}"><strong>{{DONATION_URL}}</strong></a>.</p>
+
+  <p>With gratitude,<br>
+  <strong>{{SIGNER_NAME}}</strong><br>
+  {{SIGNER_TITLE}}, {{CHARITY_NAME}}</p>
+
+</body>
+</html>

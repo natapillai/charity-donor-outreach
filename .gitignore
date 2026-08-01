@@ -1,0 +1,13 @@
+# Generated letter drafts and review summaries — never commit donor output
+output/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
